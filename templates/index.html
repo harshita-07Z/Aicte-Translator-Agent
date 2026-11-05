@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AICTE Translator Agent — Multilingual Course Content</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════ HEADER ══════════════════ -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo-block">
+      <div class="logo-icon">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" fill="#0f62fe"/>
+          <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+                font-size="18" fill="white" font-family="Arial" font-weight="bold">अ</text>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-title">AICTE Translator Agent</div>
+        <div class="logo-sub">Powered by IBM Granite · watsonx.ai</div>
+      </div>
+    </div>
+    <div class="header-badges">
+      <span class="badge badge-blue">RAG</span>
+      <span class="badge badge-dark">IBM Granite</span>
+      <span id="health-badge" class="badge badge-gray">Checking…</span>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">Break Language Barriers in Education</h1>
+    <p class="hero-desc">
+      Upload academic notes, presentations, or PDFs and receive accurate translations
+      into Hindi, Marathi, Tamil, Bengali, Telugu, Kannada, and more —
+      with technical terminology preserved via RAG.
+    </p>
+    <div class="lang-pills">
+      <span class="lpill">हिंदी</span><span class="lpill">मराठी</span>
+      <span class="lpill">தமிழ்</span><span class="lpill">বাংলা</span>
+      <span class="lpill">తెలుగు</span><span class="lpill">ಕನ್ನಡ</span>
+      <span class="lpill">ગુજરાતી</span><span class="lpill">ਪੰਜਾਬੀ</span>
+      <span class="lpill">മലയാളം</span><span class="lpill">ଓଡ଼ିଆ</span>
+      <span class="lpill">اردو</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ MAIN ══════════════════ -->
+<main class="main">
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab active" data-tab="text">📝 Text Translator</button>
+    <button class="tab" data-tab="document">📄 Document Translator</button>
+    <button class="tab" data-tab="glossary">📚 Glossary Explorer</button>
+  </div>
+
+  <!-- ── TAB: TEXT TRANSLATOR ── -->
+  <div id="tab-text" class="tab-content active">
+    <div class="card-grid">
+      <!-- Input -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Source Text</h2>
+          <div class="inline-row">
+            <label class="label-sm" for="source-lang-select">Source Language</label>
+            <select id="source-lang-select" class="select-sm">
+              <option value="">Auto-detect</option>
+            </select>
+          </div>
+        </div>
+        <textarea id="source-text"
+          placeholder="Paste academic content here — lecture notes, formulas, definitions…"
+          rows="12"></textarea>
+        <div class="char-count"><span id="char-count">0</span> characters</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="domain-select">Subject Domain</label>
+            <select id="domain-select">
+              <option value="">— Select Domain —</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="physics">Physics</option>
+              <option value="chemistry">Chemistry</option>
+              <option value="biology">Biology</option>
+              <option value="computer_science">Computer Science</option>
+              <option value="education">Education</option>
+              <option value="engineering">Engineering</option>
+              <option value="economics">Economics</option>
+              <option value="history">History</option>
+              <option value="literature">Literature</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="target-lang-select">Target Language</label>
+            <select id="target-lang-select">
+              <option value="">— Select Language —</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="translate-btn" class="btn btn-primary" onclick="translateText()">
+          <span id="translate-btn-text">🌐 Translate with IBM Granite</span>
+        </button>
+      </div>
+
+      <!-- Output -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Translation</h2>
+          <button class="btn btn-ghost" onclick="copyTranslation()" id="copy-btn" style="display:none">
+            📋 Copy
+          </button>
+        </div>
+        <div id="translation-output" class="translation-box placeholder-text">
+          Translation will appear here…
+        </div>
+        <div id="translation-meta" class="meta-block" style="display:none">
+          <div class="meta-row">
+            <span class="meta-label">Model</span>
+            <span id="meta-model" class="meta-value">—</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Source Language</span>
+            <span id="meta-src-lang" class="meta-value">—</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Target Language</span>
+            <span id="meta-tgt-lang" class="meta-value">—</span>
+          </div>
+          <div class="meta-row" id="meta-glossary-row">
+            <span class="meta-label">Glossary Terms Used</span>
+            <span id="meta-glossary" class="meta-value">—</span>
+          </div>
+          <div class="meta-row" id="meta-domain-row">
+            <span class="meta-label">Domain</span>
+            <span id="meta-domain" class="meta-value">—</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Example prompts -->
+    <div class="examples-section">
+      <h3>Try an Example</h3>
+      <div class="examples-grid">
+        <div class="example-card" onclick="loadExample('newton')">
+          <div class="ex-tag">Physics</div>
+          <p>Newton's Laws of Motion — Classical Mechanics</p>
+        </div>
+        <div class="example-card" onclick="loadExample('algorithm')">
+          <div class="ex-tag">Computer Science</div>
+          <p>Binary Search Algorithm — Data Structures</p>
+        </div>
+        <div class="example-card" onclick="loadExample('photosynthesis')">
+          <div class="ex-tag">Biology</div>
+          <p>Photosynthesis and Cellular Respiration</p>
+        </div>
+        <div class="example-card" onclick="loadExample('calculus')">
+          <div class="ex-tag">Mathematics</div>
+          <p>Differential Calculus — Derivatives</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TAB: DOCUMENT TRANSLATOR ── -->
+  <div id="tab-document" class="tab-content">
+    <div class="card">
+      <h2>Upload Academic Document</h2>
+      <p class="card-desc">
+        Upload a PDF, DOCX, PPTX, TXT, or Markdown file. The agent extracts text,
+        indexes it for RAG retrieval, and translates it into your chosen languages.
+      </p>
+
+      <!-- Drop zone -->
+      <div id="drop-zone" class="drop-zone"
+           ondragover="handleDragOver(event)"
+           ondragleave="handleDragLeave(event)"
+           ondrop="handleDrop(event)">
+        <div class="drop-icon">📂</div>
+        <p>Drag & drop a file here, or</p>
+        <label for="file-input" class="btn btn-secondary">Browse Files</label>
+        <input type="file" id="file-input" accept=".pdf,.docx,.pptx,.txt,.md"
+               onchange="handleFileSelect(event)" style="display:none" />
+        <p class="drop-hint">PDF · DOCX · PPTX · TXT · MD — max 50 MB</p>
+      </div>
+
+      <!-- File details -->
+      <div id="file-details" style="display:none" class="file-details">
+        <div class="file-icon">📄</div>
+        <div>
+          <div id="file-name" class="file-name">—</div>
+          <div id="file-size" class="file-size-txt">—</div>
+        </div>
+        <button class="btn btn-ghost" onclick="clearFile()">✕ Remove</button>
+      </div>
+
+      <div class="form-row" style="margin-top:1rem">
+        <div class="form-group">
+          <label for="doc-domain-select">Subject Domain</label>
+          <select id="doc-domain-select">
+            <option value="">— Select Domain —</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+            <option value="computer_science">Computer Science</option>
+            <option value="education">Education</option>
+            <option value="engineering">Engineering</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="lang-checkboxes" id="doc-lang-checkboxes">
+        <label class="section-label">Target Languages (select one or more)</label>
+        <div id="lang-checkbox-list" class="checkbox-grid"></div>
+      </div>
+
+      <button id="upload-translate-btn" class="btn btn-primary" onclick="uploadAndTranslate()">
+        🚀 Upload & Translate
+      </button>
+    </div>
+
+    <!-- Results -->
+    <div id="doc-results" style="display:none" class="card">
+      <h2>Translation Results</h2>
+      <div id="doc-progress-bar" class="progress-container">
+        <div id="doc-progress-fill" class="progress-fill" style="width:0%"></div>
+        <span id="doc-progress-text" class="progress-text">0%</span>
+      </div>
+      <div id="doc-status-text" class="status-text">Processing…</div>
+      <div id="doc-lang-results" class="lang-results-grid"></div>
+    </div>
+
+    <!-- Document list -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Uploaded Documents</h2>
+        <button class="btn btn-ghost" onclick="loadDocumentList()">🔄 Refresh</button>
+      </div>
+      <div id="doc-list" class="doc-list">
+        <p class="placeholder-text">No documents uploaded yet.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TAB: GLOSSARY EXPLORER ── -->
+  <div id="tab-glossary" class="tab-content">
+    <div class="card">
+      <h2>Academic Glossary</h2>
+      <p class="card-desc">
+        Browse the built-in multilingual academic glossary. These terms are
+        automatically injected into every translation to ensure technical accuracy.
+      </p>
+      <div class="glossary-filters">
+        <input type="text" id="glossary-search" placeholder="Search term…"
+               oninput="filterGlossary()" class="input-field" />
+        <select id="glossary-domain-filter" onchange="filterGlossary()" class="select-sm">
+          <option value="">All Domains</option>
+          <option value="mathematics">Mathematics</option>
+          <option value="physics">Physics</option>
+          <option value="chemistry">Chemistry</option>
+          <option value="biology">Biology</option>
+          <option value="computer_science">Computer Science</option>
+          <option value="education">Education</option>
+          <option value="science">Science</option>
+        </select>
+      </div>
+      <div id="glossary-table-container" class="table-container">
+        <table id="glossary-table" class="glossary-table">
+          <thead>
+            <tr>
+              <th>Term</th><th>Domain</th><th>हिंदी</th>
+              <th>मराठी</th><th>தமிழ்</th><th>বাংলা</th>
+              <th>తెలుగు</th><th>ಕನ್ನಡ</th>
+            </tr>
+          </thead>
+          <tbody id="glossary-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="footer">
+  <div>AICTE Multi-language Course Content Translator Agent · Problem Statement #17</div>
+  <div class="footer-powered">Powered by <strong>IBM Granite</strong> · watsonx.ai · RAG</div>
+</footer>
+
+<div id="toast" class="toast" style="display:none"></div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

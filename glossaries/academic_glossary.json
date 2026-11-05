@@ -1,0 +1,362 @@
+[
+  {
+    "term": "algorithm",
+    "domain": "computer_science",
+    "definition": "A step-by-step procedure for solving a problem or accomplishing a task",
+    "translations": {
+      "hi": "एल्गोरिदम",
+      "mr": "अल्गोरिदम",
+      "ta": "வழிமுறை",
+      "bn": "অ্যালগরিদম",
+      "te": "అల్గోరిదం",
+      "kn": "ಅಲ್ಗಾರಿದಮ್",
+      "gu": "એલ્ગોરિધમ",
+      "pa": "ਐਲਗੋਰਿਦਮ",
+      "ml": "അൽഗോരിതം",
+      "or": "ଆଲଗୋରିଦ",
+      "ur": "الگورتھم"
+    }
+  },
+  {
+    "term": "data structure",
+    "domain": "computer_science",
+    "definition": "A way of organizing and storing data in a computer so it can be accessed efficiently",
+    "translations": {
+      "hi": "डेटा संरचना",
+      "mr": "डेटा रचना",
+      "ta": "தரவு அமைப்பு",
+      "bn": "ডেটা স্ট্রাকচার",
+      "te": "డేటా నిర్మాణం",
+      "kn": "ಡೇಟಾ ರಚನೆ",
+      "gu": "ડેટા સ્ટ્રક્ચર",
+      "pa": "ਡੇਟਾ ਢਾਂਚਾ",
+      "ml": "ഡേറ്റ ഘടന",
+      "or": "ଡାଟା ଗଠନ",
+      "ur": "ڈیٹا ڈھانچہ"
+    }
+  },
+  {
+    "term": "derivative",
+    "domain": "mathematics",
+    "definition": "The rate at which a function changes with respect to a variable",
+    "translations": {
+      "hi": "अवकलज",
+      "mr": "अवकलन",
+      "ta": "வகையீடு",
+      "bn": "অবকল",
+      "te": "అవకలనం",
+      "kn": "ಅವಕಲಜ",
+      "gu": "વ્યુત્પન્ન",
+      "pa": "ਡੈਰੀਵੇਟਿਵ",
+      "ml": "അവകലജം",
+      "or": "ବ୍ୟୁତ୍ପନ୍ନ",
+      "ur": "مشتق"
+    }
+  },
+  {
+    "term": "integral",
+    "domain": "mathematics",
+    "definition": "The reverse of differentiation; area under a curve",
+    "translations": {
+      "hi": "समाकल",
+      "mr": "समाकल",
+      "ta": "தொகைப்படி",
+      "bn": "সমাকল",
+      "te": "సమాకలనం",
+      "kn": "ಸಮಾಕಲ",
+      "gu": "સમાકલ",
+      "pa": "ਸਮਾਕਲ",
+      "ml": "സമാകലം",
+      "or": "ସମାକଳ",
+      "ur": "انٹیگرل"
+    }
+  },
+  {
+    "term": "photosynthesis",
+    "domain": "biology",
+    "definition": "The process by which plants use sunlight, water, and CO2 to produce food",
+    "translations": {
+      "hi": "प्रकाश संश्लेषण",
+      "mr": "प्रकाशसंश्लेषण",
+      "ta": "ஒளிச்சேர்க்கை",
+      "bn": "সালোকসংশ্লেষণ",
+      "te": "కిరణజన్య సంయోగక్రియ",
+      "kn": "ದ್ಯುತಿಸಂಶ್ಲೇಷಣೆ",
+      "gu": "પ્રકાશસંશ્લેષણ",
+      "pa": "ਪ੍ਰਕਾਸ਼ ਸੰਸ਼ਲੇਸ਼ਣ",
+      "ml": "പ്രകാശസംശ്ലേഷണം",
+      "or": "ସ୍ୱୟଂ ଆଲୋକ ସଂଶ୍ଲେଷଣ",
+      "ur": "ضیائی تالیف"
+    }
+  },
+  {
+    "term": "mitosis",
+    "domain": "biology",
+    "definition": "Cell division resulting in two identical daughter cells",
+    "translations": {
+      "hi": "समसूत्री विभाजन",
+      "mr": "समसूत्री विभाजन",
+      "ta": "சமவிகித பிரிவு",
+      "bn": "মাইটোসিস",
+      "te": "మైటోసిస్",
+      "kn": "ಮೈಟೋಸಿಸ್",
+      "gu": "માઇટોસિસ",
+      "pa": "ਮਾਈਟੋਸਿਸ",
+      "ml": "മൈറ്റോസിസ്",
+      "or": "ମାଇଟୋସିସ",
+      "ur": "میٹاسس"
+    }
+  },
+  {
+    "term": "entropy",
+    "domain": "physics",
+    "definition": "A measure of disorder or randomness in a thermodynamic system",
+    "translations": {
+      "hi": "एन्ट्रॉपी",
+      "mr": "एन्ट्रॉपी",
+      "ta": "என்ட்ரோபி",
+      "bn": "এনট্রপি",
+      "te": "ఎంట్రోపీ",
+      "kn": "ಎಂಟ್ರೋಪಿ",
+      "gu": "એન્ટ્રોપી",
+      "pa": "ਐਂਟਰੋਪੀ",
+      "ml": "എൻട്രോപ്പി",
+      "or": "ଏନ୍ଟ୍ରୋପି",
+      "ur": "اینٹروپی"
+    }
+  },
+  {
+    "term": "hypothesis",
+    "domain": "science",
+    "definition": "A proposed explanation for an observation that can be tested",
+    "translations": {
+      "hi": "परिकल्पना",
+      "mr": "गृहीतक",
+      "ta": "கருதுகோள்",
+      "bn": "অনুকল্প",
+      "te": "పరికల్పన",
+      "kn": "ಊಹೆ",
+      "gu": "પ્રૂવ",
+      "pa": "ਅਨੁਮਾਨ",
+      "ml": "സിദ്ധാന്തം",
+      "or": "ଅନୁମାନ",
+      "ur": "قیاس"
+    }
+  },
+  {
+    "term": "oxidation",
+    "domain": "chemistry",
+    "definition": "Loss of electrons or increase in oxidation state of an atom",
+    "translations": {
+      "hi": "ऑक्सीकरण",
+      "mr": "ऑक्सिडेशन",
+      "ta": "ஆக்சிஜனேற்றம்",
+      "bn": "জারণ",
+      "te": "ఆక్సీకరణం",
+      "kn": "ಆಕ್ಸಿಡೇಶನ್",
+      "gu": "ઓક્સિડેશન",
+      "pa": "ਆਕਸੀਕਰਨ",
+      "ml": "ഓക്‌സിഡേഷൻ",
+      "or": "ଅକ୍ସିଡେସନ",
+      "ur": "آکسیکرن"
+    }
+  },
+  {
+    "term": "curriculum",
+    "domain": "education",
+    "definition": "The subjects comprising a course of study in a school or college",
+    "translations": {
+      "hi": "पाठ्यक्रम",
+      "mr": "अभ्यासक्रम",
+      "ta": "பாடத்திட்டம்",
+      "bn": "পাঠ্যক্রম",
+      "te": "పాఠ్యక్రమం",
+      "kn": "ಪಠ್ಯಕ್ರಮ",
+      "gu": "અભ્યાસક્રમ",
+      "pa": "ਪਾਠਕ੍ਰਮ",
+      "ml": "പാഠ്യക്രമം",
+      "or": "ପାଠ୍ୟକ୍ରମ",
+      "ur": "نصاب"
+    }
+  },
+  {
+    "term": "pedagogy",
+    "domain": "education",
+    "definition": "The art, science, or profession of teaching",
+    "translations": {
+      "hi": "शिक्षाशास्त्र",
+      "mr": "अध्यापनशास्त्र",
+      "ta": "கற்பித்தல் முறை",
+      "bn": "শিক্ষাপদ্ধতি",
+      "te": "బోధనాశాస్త్రం",
+      "kn": "ಶಿಕ್ಷಣ ವಿಧಾನ",
+      "gu": "અધ્યયન",
+      "pa": "ਅਧਿਆਪਨ ਵਿਗਿਆਨ",
+      "ml": "അദ്ധ്യാപനശാസ്ത്രം",
+      "or": "ଶିକ୍ଷାଶାସ୍ତ୍ର",
+      "ur": "فن تدریس"
+    }
+  },
+  {
+    "term": "Newton's law",
+    "domain": "physics",
+    "definition": "Fundamental laws governing the motion of objects",
+    "translations": {
+      "hi": "न्यूटन का नियम",
+      "mr": "न्यूटनचा नियम",
+      "ta": "நியூட்டன் விதி",
+      "bn": "নিউটনের সূত্র",
+      "te": "న్యూటన్ నియమం",
+      "kn": "ನ್ಯೂಟನ್ ನಿಯಮ",
+      "gu": "ન્યૂટનનો નિયમ",
+      "pa": "ਨਿਊਟਨ ਦਾ ਨਿਯਮ",
+      "ml": "ന്യൂട്ടന്റെ നിയമം",
+      "or": "ନ୍ୟୁଟନ ନିୟମ",
+      "ur": "نیوٹن کا قانون"
+    }
+  },
+  {
+    "term": "electric field",
+    "domain": "physics",
+    "definition": "A region around an electric charge in which another charge would feel a force",
+    "translations": {
+      "hi": "विद्युत क्षेत्र",
+      "mr": "विद्युत क्षेत्र",
+      "ta": "மின்னழுத்த புலம்",
+      "bn": "বৈদ্যুতিক ক্ষেত্র",
+      "te": "విద్యుత్ క్షేత్రం",
+      "kn": "ವಿದ್ಯುತ್ ಕ್ಷೇತ್ರ",
+      "gu": "વિદ્યુત ક્ષેત્ર",
+      "pa": "ਬਿਜਲੀ ਖੇਤਰ",
+      "ml": "വൈദ്യുത ക്ഷേത്രം",
+      "or": "ବୈଦ୍ୟୁତ ଦ୍ୟୁ",
+      "ur": "برقی میدان"
+    }
+  },
+  {
+    "term": "stoichiometry",
+    "domain": "chemistry",
+    "definition": "The calculation of reactants and products in chemical reactions",
+    "translations": {
+      "hi": "रससमीकरणमिति",
+      "mr": "स्टोइकिओमेट्री",
+      "ta": "ஸ்டாய்க்கியோமெட்ரி",
+      "bn": "স্টয়কিওমেট্রি",
+      "te": "స్టోకియోమెట్రీ",
+      "kn": "ರಾಸಾಯನಿಕ ಪ್ರಮಾಣ",
+      "gu": "સ્ટૉઇઓક્નૉ",
+      "pa": "ਸਟੋਇਕਿਓਮੈਟ੍ਰੀ",
+      "ml": "സ്റ്റോയ്ക്കിയോമെട്രി",
+      "or": "ସ୍ଟୋଇଚ ଅ",
+      "ur": "کیمیائی حسابیات"
+    }
+  },
+  {
+    "term": "vector",
+    "domain": "mathematics",
+    "definition": "A quantity having direction as well as magnitude",
+    "translations": {
+      "hi": "सदिश",
+      "mr": "सदिश",
+      "ta": "திசையன்",
+      "bn": "ভেক্টর",
+      "te": "వెక్టర్",
+      "kn": "ದಿಕ್ಕಿನ ರಾಶಿ",
+      "gu": "સદિશ",
+      "pa": "ਵੈਕਟਰ",
+      "ml": "സദിശം",
+      "or": "ଭ୍ ×",
+      "ur": "ویکٹر"
+    }
+  },
+  {
+    "term": "matrix",
+    "domain": "mathematics",
+    "definition": "A rectangular array of numbers, symbols, or expressions arranged in rows and columns",
+    "translations": {
+      "hi": "आव्यूह",
+      "mr": "मॅट्रिक्स",
+      "ta": "அணி",
+      "bn": "ম্যাট্রিক্স",
+      "te": "మాతృక",
+      "kn": "ಮ್ಯಾಟ್ರಿಕ್ಸ್",
+      "gu": "મૅટ્રિક્સ",
+      "pa": "ਮੈਟ੍ਰਿਕਸ",
+      "ml": "മാട്രിക്‌സ്",
+      "or": "ମ୍ୟାଟ୍ରିକ୍ସ",
+      "ur": "میٹرکس"
+    }
+  },
+  {
+    "term": "osmosis",
+    "domain": "biology",
+    "definition": "Movement of water molecules through a semi-permeable membrane from low to high concentration",
+    "translations": {
+      "hi": "परासरण",
+      "mr": "ऑस्मोसिस",
+      "ta": "சவ்வூடு பரவல்",
+      "bn": "অভিস্রবণ",
+      "te": "ద్రవాభిసరణం",
+      "kn": "ಆಸ್ಮೋಸಿಸ್",
+      "gu": "ઓસ્મોસ",
+      "pa": "ਓਸਮੋਸਿਸ",
+      "ml": "ഓസ്മോസിസ്",
+      "or": "ଅଭିସ୍ରବଣ",
+      "ur": "روزمہ"
+    }
+  },
+  {
+    "term": "recursion",
+    "domain": "computer_science",
+    "definition": "A programming technique where a function calls itself to solve smaller subproblems",
+    "translations": {
+      "hi": "पुनरावर्तन",
+      "mr": "पुनरावृत्ती",
+      "ta": "மீளாய்வு",
+      "bn": "পুনরাবৃত্তি",
+      "te": "పునరావృత్తి",
+      "kn": "ಮರುಕಳಿಕೆ",
+      "gu": "પુનরાવર્તન",
+      "pa": "ਰੀਕਰਸ਼ਨ",
+      "ml": "ആവർത്തനം",
+      "or": "ପୁନ ×",
+      "ur": "تکرار"
+    }
+  },
+  {
+    "term": "probability",
+    "domain": "mathematics",
+    "definition": "The measure of the likelihood that an event will occur",
+    "translations": {
+      "hi": "प्रायिकता",
+      "mr": "संभाव्यता",
+      "ta": "நிகழ்தகவு",
+      "bn": "সম্ভাবনা",
+      "te": "సంభావ్యత",
+      "kn": "ಸಂಭಾವ್ಯತೆ",
+      "gu": "સંભાવ્યતા",
+      "pa": "ਸੰਭਾਵਨਾ",
+      "ml": "സംഭാവ്യത",
+      "or": "ସ ×",
+      "ur": "امکان"
+    }
+  },
+  {
+    "term": "thermodynamics",
+    "domain": "physics",
+    "definition": "The branch of physics that deals with heat, work, temperature, and energy",
+    "translations": {
+      "hi": "ऊष्मागतिकी",
+      "mr": "ऊष्मागतिकी",
+      "ta": "வெப்பவியக்கவியல்",
+      "bn": "তাপগতিবিদ্যা",
+      "te": "ఉష్ణగతిశాస్త్రం",
+      "kn": "ಉಷ್ಣಚಲನ ವಿಜ್ಞಾನ",
+      "gu": "ઊष्मागतिकी",
+      "pa": "ਤਾਪ ਗਤੀ ਵਿਗਿਆਨ",
+      "ml": "താപഗതിശാസ്ത്രം",
+      "or": "ଉ",
+      "ur": "حرحرکیات"
+    }
+  }
+]

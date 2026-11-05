@@ -1,0 +1,38 @@
+
+# ── Core Framework ────────────────────────────────────────
+fastapi
+uvicorn[standard]
+python-multipart
+
+# ── IBM Watson & Granite ──────────────────────────────────
+# Note: ibm-watsonx-ai requires Python <=3.12 for full wheel support.
+# On Python 3.13/3.14, install with: pip install ibm-watsonx-ai --no-build-isolation
+ibm-watsonx-ai
+ibm-watson
+ibm-cloud-sdk-core
+
+# ── RAG & Vector Store ────────────────────────────────────
+chromadb
+sentence-transformers
+
+# ── Document Parsing ──────────────────────────────────────
+PyMuPDF
+python-pptx
+python-docx
+pypdf
+pillow
+
+# ── NLP & Text Processing ─────────────────────────────────
+langdetect
+nltk
+
+# ── Utilities ─────────────────────────────────────────────
+python-dotenv
+pydantic
+pydantic-settings
+httpx
+aiofiles
+tqdm
+
+# ── Frontend serving ──────────────────────────────────────
+jinja2
